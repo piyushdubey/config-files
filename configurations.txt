@@ -1,0 +1,147 @@
+-XX:MaxPermSize=1024m -Xms1024m -Xmx2048m -Drebel.struts2-plugin=false
+
+--------------------------------------------------------------------------------------------------------
+
+<Resource
+ auth="Container"
+ driverClassName="com.mysql.jdbc.Driver"
+ maxActive="10"
+ maxIdle="5"
+ maxWait="10000"
+ name="core_connection"
+ password="root"
+ type="javax.sql.DataSource"
+ url="jdbc:mysql://localhost:3306/core"
+ username="root"
+ validationQuery="/* ping */" />
+ 
+<Parameter name="struts.devMode" value="true"/>
+
+---------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_core_main/core-integration/target/classes">
+		</dir>
+	</classpath>
+
+<web>
+    <link target="/">
+        <dir name="/home/udubepi/projects/udubepi_core_main/core-integration/src/main/resources/META-INF/resources" />
+    </link>
+</web>
+</application>
+
+---------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_core_main/common/target/classes">
+		</dir>
+	</classpath>
+
+</application>
+
+---------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_core_main/core-batch/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir name="/home/udubepi/projects/udubepi_core_main/core-batch/target/m2e-wtp/web-resources">
+				<exclude name="/"/>
+			</dir>
+		</link>
+		<link target="/">
+			<dir name="/home/udubepi/projects/udubepi_core_main/core-batch/src/main/webapp">
+			</dir>
+		</link>
+	</web>
+
+</application>
+
+----------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_core_main/core-customer/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir name="/home/udubepi/projects/udubepi_core_main/core-customer/target/m2e-wtp/web-resources">
+				<exclude name="/"/>
+			</dir>
+		</link>
+		<link target="/">
+			<dir name="/home/udubepi/projects/udubepi_core_main/core-customer/src/main/webapp">
+			</dir>
+		</link>
+	</web>
+
+</application>
+
+----------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_core_main/core-tags/target/classes">
+		</dir>
+	</classpath>
+
+</application>
+
+-----------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.zeroturnaround.com"
+	xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_orders_plugin/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir
+				name="/home/udubepi/projects/udubepi_orders_plugin/src/main/resources/META-INF/resources" />
+		</link>
+	</web>
+</application>
+
+--------------------------------------------------------------------------------------------------------------
+
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.zeroturnaround.com"
+	xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
+
+	<classpath>
+		<dir name="/home/udubepi/projects/udubepi_session_plugin/target/classes">
+		</dir>
+	</classpath>
+
+	<web>
+		<link target="/">
+			<dir
+				name="/home/udubepi/projects/udubepi_session_plugin/src/main/resources/META-INF/resources" />
+		</link>
+	</web>
+</application>
